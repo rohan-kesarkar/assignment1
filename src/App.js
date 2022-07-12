@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { TypeOfFood} from "./components/food/typeOfFood";
+import {Parent} from "./components/parent"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello World</h1>
+
+<p>Lets render this to the DOM</p>
+<ul>
+<li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+      <Parent/>
+      <TypeOfFood />
     </div>
   );
 }
